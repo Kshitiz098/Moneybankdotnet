@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\moneybankdotnet\\Moneybank\\Moneybank\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\Moneybank.styles.css",
+      "PackagePath": "staticwebassets\\Moneybank.styles.css"
+    },
+    {
+      "Id": "E:\\moneybankdotnet\\Moneybank\\Moneybank\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "E:\\moneybankdotnet\\Moneybank\\Moneybank\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\moneybankdotnet\\Moneybank\\Moneybank\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\moneybankdotnet\\Moneybank\\Moneybank\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\moneybankdotnet\\Moneybank\\Moneybank\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.Moneybank.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.Moneybank.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.build.Moneybank.props",
+      "PackagePath": "build\\Moneybank.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildMultiTargeting.Moneybank.props",
+      "PackagePath": "buildMultiTargeting\\Moneybank.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildTransitive.Moneybank.props",
+      "PackagePath": "buildTransitive\\Moneybank.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
