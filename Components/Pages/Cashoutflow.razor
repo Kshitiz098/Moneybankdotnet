@@ -1,0 +1,175 @@
+﻿@page "/cashout"
+@inject JsonDataService<ModelList> DataStoreService
+
+<h2 class="mb-4">Cash Out</h2>
+
+<div class="container">
+    <form @onsubmit="HandleCashOut" class="row g-3">
+        <!-- Amount -->
+        <div class="col-md-6">
+            <label for="cashOutAmount" class="form-label">Amount</label>
+            <input type="number" id="cashOutAmount" @bind="Amount" class="form-control" placeholder="Enter amount" required />
+        </div>
+
+        <!-- Description -->
+        <div class="col-md-6">
+            <label for="cashOutDescription" class="form-label">Description</label>
+            <input type="text" id="cashOutDescription" @bind="Note" class="form-control" placeholder="Enter description" required />
+        </div>
+
+        <!-- Tags -->
+        <div class="col-md-12">
+            <label for="cashOutTags" class="form-label">Tags</label>
+            <select id="cashOutTags" class="form-control" @bind="SelectedTag" required>
+                <option value="">Select a tag</option>
+                @foreach (var tag in AvailableTags)
+                {
+                    <option value="@tag.TagName">@tag.TagName</option>
+                }
+            </select>
+            <small class="form-text text-muted">Select a tag for better organization.</small>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="col-12">
+            <button type="submit" class="btn btn-danger w-100">Add Cash Out</button>
+        </div>
+    </form>
+</div>
+
+<p style="color:red">@ErrorMessage</p>
+
+@code {
+    private decimal Amount;
+    private string Note;
+    private string ErrorMessage;
+    private List<Transaction> transactions = new List<Transaction>();
+    private List<CashIn> credits = new List<CashIn>();
+    private List<CashOut> debits = new List<CashOut>();
+    private List<Tag> AvailableTags = new List<Tag>();
+    private string SelectedTag { get; set; } // Store the selected tag
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // Load data from the JSON file
+            var dataStore = await DataStoreService.LoadDataAsync();
+            if (dataStore == null)
+            {
+                ErrorMessage = "Failed to load data.";
+                return;
+            }
+
+            transactions = dataStore.Transactions.ToList();
+            credits = dataStore.credits.ToList();
+            debits = dataStore.debits.ToList();
+            AvailableTags = dataStore.Tagss.ToList(); // Load tags
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Error loading data: {ex.Message}";
+        }
+    }
+
+    private async Task HandleCashOut()
+    {
+        try
+        {
+            if (Amount <= 0)
+            {
+                ErrorMessage = "Amount must be greater than zero.";
+                return;
+            }
+
+            // Calculate available balance
+            decimal? availableBalance = credits.Sum(c => c.CreditAmount) - transactions
+                .Where(t => t.TransactionLabel == "Debit" || t.TransactionLabel == "Debt")
+                .Sum(t => t.Amount);
+
+            decimal availableBalanceValue = availableBalance.GetValueOrDefault();
+
+            if (availableBalanceValue >= Amount)
+            {
+                // Add normal debit transaction
+                transactions.Add(new Transaction
+                    {
+                        TransactionId = transactions.Count + 1,
+                        TransactionLabel = "Debit",
+                        Amount = Amount,
+                        TransactionOf = Note,
+                        TagName = SelectedTag, // Use the selected tag
+                        Date = DateTime.Now
+                    });
+
+                // Add corresponding debit entry
+                debits.Add(new CashOut
+                    {
+                        DebitId = debits.Count + 1,
+                        DebitAmount = Amount,
+                        DebitDescription = Note,
+                        DebitDate = DateTime.Now,
+                    });
+            }
+            else
+            {
+                if (availableBalanceValue > 0)
+                {
+                    // Add debit transaction for available balance
+                    transactions.Add(new Transaction
+                        {
+                            TransactionId = transactions.Count + 1,
+                            TransactionLabel = "Debit",
+                            Amount = availableBalanceValue,
+                            TransactionOf = Note,
+                            TagName = SelectedTag, // Use the selected tag
+                            Date = DateTime.Now
+                        });
+
+                    // Add corresponding debit entry
+                    debits.Add(new CashOut
+                        {
+                            DebitId = debits.Count + 1,
+                            DebitAmount = availableBalanceValue,
+                            DebitDescription = Note,
+                            DebitDate = DateTime.Now,
+                        });
+                }
+
+                // Handle the remaining debt if available balance is insufficient
+                var remainingDebt = Amount - availableBalanceValue;
+
+                transactions.Add(new Transaction
+                    {
+                        TransactionId = transactions.Count + 1,
+                        TransactionLabel = "Debt",
+                        Amount = remainingDebt,
+                        TransactionOf = "Insufficient Balance",
+                        TagName = SelectedTag, // Use the selected tag
+                        Date = DateTime.Now,
+                        IsDebtCleared = false
+                    });
+            }
+
+            // Save updated data
+            var updatedDataStore = new ModelList
+                {
+                    Transactions = transactions,
+                    credits = credits,
+                    debits = debits, // Save updated debits
+                    Tagss = AvailableTags // Save the tags as well
+                };
+            await DataStoreService.SaveDataAsync(updatedDataStore);
+
+            // Reset fields after submission
+            Amount = 0;
+            Note = string.Empty;
+            SelectedTag = string.Empty; // Clear selected tag
+            ErrorMessage = string.Empty;
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"An error occurred while processing the cash-out: {ex.Message}";
+        }
+    }
+}

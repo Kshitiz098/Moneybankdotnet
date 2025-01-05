@@ -1,0 +1,133 @@
+@page "/cashin"
+@inject JsonDataService<ModelList> DataStoreService
+
+<h2 class="mb-4">Cash In</h2>
+
+<div class="container">
+    <form class="row g-3" @onsubmit="HandleCashIn">
+        <!-- Amount -->
+        <div class="col-md-6">
+            <label for="cashInAmount" class="form-label">Amount</label>
+            <input type="number" id="cashInAmount" class="form-control" placeholder="Enter amount" @bind="Amount" required />
+        </div>
+
+        <!-- Description -->
+        <div class="col-md-6">
+            <label for="cashInDescription" class="form-label">Description</label>
+            <input type="text" id="cashInDescription" class="form-control" placeholder="Enter description" @bind="Note" required />
+        </div>
+
+        <!-- Tags -->
+        <div class="col-md-12">
+            <label for="cashInTags" class="form-label">Tags</label>
+            <select id="cashInTags" class="form-select" @bind="SelectedTagId">
+                <option value="">Select a tag</option>
+                @foreach (var tag in Tags)
+                {
+                        <option value="@tag.TagId">@tag.TagName</option>
+                }
+            </select>
+            <small class="form-text text-muted">Select a tag for better organization.</small>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100">Add Cash In</button>
+        </div>
+    </form>
+
+    <p style="color:red">@ErrorMessage</p>
+</div>
+
+@code {
+    private decimal Amount;
+    private string Note;
+    private string ErrorMessage;
+    private int? SelectedTagId;
+    private List<Tag> Tags = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var dataStore = await DataStoreService.LoadDataAsync();
+            Tags = dataStore?.Tagss ?? new List<Tag>(); // Ensure Tags are loaded from dataStore
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Error loading tags: {ex.Message}";
+        }
+    }
+
+    private async Task HandleCashIn()
+    {
+        try
+        {
+            if (Amount <= 0)
+            {
+                ErrorMessage = "Amount must be greater than zero.";
+                return;
+            }
+
+            var dataStore = await DataStoreService.LoadDataAsync();
+            string tagName = string.Empty;
+
+            if (SelectedTagId.HasValue)
+            {
+                var selectedTag = Tags.FirstOrDefault(tag => tag.TagId == SelectedTagId.Value);
+                tagName = selectedTag?.TagName ?? string.Empty;
+
+                // Update the tag's Transactions list
+                if (selectedTag != null)
+                {
+                    selectedTag.Transactions.Add(new Transaction
+                        {
+                            TransactionId = dataStore.Transactions.Count + 1,
+                            TransactionLabel = "Credit",
+                            Amount = Amount,
+                            TransactionOf = Note,
+                            TagName = tagName,
+                            Date = DateTime.Now
+                        });
+                }
+            }
+
+            // Create new CashIn record
+            var newCredit = new CashIn
+                {
+                    CreditId = dataStore.credits.Count + 1,
+                    CreditAmount = Amount,
+                    CreditDescription = Note,
+                    CreditDate = DateTime.Now
+                };
+
+            dataStore.credits.Add(newCredit);  // Add CashIn to the credits list
+
+            // Also, create a new Transaction record
+            var newTransaction = new Transaction
+                {
+                    TransactionId = dataStore.Transactions.Count + 1,
+                    TransactionLabel = "Credit",
+                    Amount = Amount,
+                    TransactionOf = Note,
+                    TagName = tagName,
+                    Date = DateTime.Now
+                };
+
+            dataStore.Transactions.Add(newTransaction);  // Add Transaction to the Transactions list
+
+            // Save the updated data store
+            await DataStoreService.SaveDataAsync(dataStore);
+
+            // Reset fields
+            Amount = 0;
+            Note = string.Empty;
+            SelectedTagId = null;
+            ErrorMessage = "Cash in added successfully!";
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Error adding cash in: {ex.Message}";
+        }
+    }
+}

@@ -1,0 +1,162 @@
+{
+  "Transactions": [
+    {
+      "TransactionId": 1,
+      "TransactionOf": "hi",
+      "Date": "2025-01-05T09:56:38.7005146+05:45",
+      "TransactionLabel": "Credit",
+      "IsDebtCleared": false,
+      "Amount": 1000,
+      "CurrencyId": null,
+      "TagName": "income",
+      "Status": null,
+      "UserId": null,
+      "Currency": null,
+      "User": null,
+      "Debts": [],
+      "Tags": []
+    },
+    {
+      "TransactionId": 2,
+      "TransactionOf": "hello",
+      "Date": "2025-01-05T09:59:17.2908827+05:45",
+      "TransactionLabel": "Credit",
+      "IsDebtCleared": false,
+      "Amount": 2000,
+      "CurrencyId": null,
+      "TagName": "income",
+      "Status": null,
+      "UserId": null,
+      "Currency": null,
+      "User": null,
+      "Debts": [],
+      "Tags": []
+    },
+    {
+      "TransactionId": 3,
+      "TransactionOf": "hi",
+      "Date": "2025-01-05T10:01:41.4785787+05:45",
+      "TransactionLabel": "Credit",
+      "IsDebtCleared": false,
+      "Amount": 3000,
+      "CurrencyId": null,
+      "TagName": "grocery",
+      "Status": null,
+      "UserId": null,
+      "Currency": null,
+      "User": null,
+      "Debts": [],
+      "Tags": []
+    },
+    {
+      "TransactionId": 4,
+      "TransactionOf": "hi",
+      "Date": "2025-01-05T10:55:58.3027374+05:45",
+      "TransactionLabel": "Credit",
+      "IsDebtCleared": false,
+      "Amount": 500,
+      "CurrencyId": null,
+      "TagName": "income",
+      "Status": null,
+      "UserId": null,
+      "Currency": null,
+      "User": null,
+      "Debts": [],
+      "Tags": []
+    },
+    {
+      "TransactionId": 5,
+      "TransactionOf": "hello",
+      "Date": "2025-01-05T11:22:11.3188839+05:45",
+      "TransactionLabel": "Debit",
+      "IsDebtCleared": false,
+      "Amount": 123,
+      "CurrencyId": null,
+      "TagName": "income",
+      "Status": null,
+      "UserId": null,
+      "Currency": null,
+      "User": null,
+      "Debts": [],
+      "Tags": []
+    },
+    {
+      "TransactionId": 6,
+      "TransactionOf": "cv",
+      "Date": "2025-01-05T11:24:08.857897+05:45",
+      "TransactionLabel": "Debit",
+      "IsDebtCleared": false,
+      "Amount": 377,
+      "CurrencyId": null,
+      "TagName": "grocery",
+      "Status": null,
+      "UserId": null,
+      "Currency": null,
+      "User": null,
+      "Debts": [],
+      "Tags": []
+    },
+    {
+      "TransactionId": 7,
+      "TransactionOf": "Insufficient Balance",
+      "Date": "2025-01-05T11:24:08.8579012+05:45",
+      "TransactionLabel": "Debt",
+      "IsDebtCleared": false,
+      "Amount": 23079,
+      "CurrencyId": null,
+      "TagName": "grocery",
+      "Status": null,
+      "UserId": null,
+      "Currency": null,
+      "User": null,
+      "Debts": [],
+      "Tags": []
+    }
+  ],
+  "Tagss": [
+    {
+      "TagId": 1,
+      "TagName": "grocery",
+      "Transactions": []
+    },
+    {
+      "TagId": 2,
+      "TagName": "income",
+      "Transactions": []
+    }
+  ],
+  "Users": [],
+  "credits": [
+    {
+      "CreditId": 1,
+      "CreditAmount": 500,
+      "CreditDate": "2025-01-05T10:55:58.3026959+05:45",
+      "CreditDescription": "hi",
+      "DebtId": null,
+      "UserId": null,
+      "Debt": null,
+      "User": null
+    }
+  ],
+  "debits": [
+    {
+      "DebitId": 1,
+      "DebitDate": "2025-01-05T11:22:11.3190054+05:45",
+      "DebitAmount": 123,
+      "DebitDescription": "hello",
+      "UserId": null,
+      "User": null
+    },
+    {
+      "DebitId": 2,
+      "DebitDate": "2025-01-05T11:24:08.8579006+05:45",
+      "DebitAmount": 377,
+      "DebitDescription": "cv",
+      "UserId": null,
+      "User": null
+    }
+  ],
+  "debts": [],
+  "currency": [],
+  "userfiles": []
+}

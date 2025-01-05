@@ -1,0 +1,1 @@
+E:\moneybankdotnet\Moneybank\Moneybank\Moneybank.csproj;x64

@@ -1,0 +1,187 @@
+﻿@page "/dashboard"
+@inject JsonDataService<ModelList> DataStoreService
+
+<h2 class="mb-4">Expense Tracker Dashboard</h2>
+
+<div class="container">
+    <!-- Search and Filter Section -->
+    <div class="mb-4">
+        <h4>Search and Filter</h4>
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="filterType" class="form-label">Filter by Type</label>
+                <select id="filterType" class="form-select" @bind="FilterType">
+                    <option value="">All Types</option>
+                    <option value="Credit">Credit</option>
+                    <option value="Debit">Debit</option>
+                    <option value="Debt">Debt</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="filterTags" class="form-label">Filter by Tags</label>
+                <select id="filterTags" class="form-select" @bind="FilterTags">
+                    <option value="">All Tags</option>
+                    @foreach (var tag in AvailableTags)
+                    {
+                        <option value="@tag">@tag</option>
+                    }
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="startDate" class="form-label">Start Date</label>
+                <input type="date" id="startDate" class="form-control" @bind="StartDate" />
+            </div>
+            <div class="col-md-6">
+                <label for="endDate" class="form-label">End Date</label>
+                <input type="date" id="endDate" class="form-control" @bind="EndDate" />
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" @onclick="ApplyFilters">Apply Filters</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Summary Statistics -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Balance Left</div>
+                <div class="card-body">
+                    <h5 class="card-title">@BalanceLeft.ToString("C")</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Total Transactions</div>
+                <div class="card-body">
+                    <h5 class="card-title">@TotalTransactions</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-header">Remaining Debts</div>
+                <div class="card-body">
+                    <h5 class="card-title">@RemainingDebts.ToString("C")</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-header">Cleared Debts</div>
+                <div class="card-body">
+                    <h5 class="card-title">@ClearedDebts.ToString("C")</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Transactions -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <h4>Top 5 Highest Transactions</h4>
+            <ul class="list-group">
+                @foreach (var transaction in Top5Highest)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        @transaction.TransactionLabel
+                        <span class="badge bg-success">@transaction.Amount.ToString("C")</span>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h4>Top 5 Lowest Transactions</h4>
+            <ul class="list-group">
+                @foreach (var transaction in Top5Lowest)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        @transaction.TransactionLabel
+                        <span class="badge bg-danger">@transaction.Amount.ToString("C")</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <!-- Transactions List -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h4>Transactions</h4>
+            <div class="list-group">
+                @foreach (var transaction in FilteredTransactions)
+                {
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-0">@transaction.TransactionLabel</h6>
+                            <small class="text-muted">@transaction.Date.ToShortDateString()</small>
+                        </div>
+                        <span class="fw-bold" style="color: @(transaction.TransactionLabel == "Debit" ? "red" : "green")">
+                            @transaction.Amount.ToString("C")
+                        </span>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string FilterType { get; set; }
+    private string FilterTags { get; set; }
+    private DateTime? StartDate { get; set; }
+    private DateTime? EndDate { get; set; }
+
+    private decimal BalanceLeft { get; set; }
+    private decimal TotalInflows { get; set; }
+    private decimal TotalOutflows { get; set; }
+    private decimal RemainingDebts { get; set; }
+    private decimal ClearedDebts { get; set; }
+    private int TotalTransactions { get; set; }
+
+    private List<Transaction> Transactions = new();
+    private List<Transaction> FilteredTransactions = new();
+    private List<Transaction> Top5Highest = new();
+    private List<Transaction> Top5Lowest = new();
+
+    private List<string> AvailableTags = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var dataStore = await DataStoreService.LoadDataAsync();
+        Transactions = dataStore?.Transactions ?? new List<Transaction>();
+        AvailableTags = dataStore?.Tagss.Select(t => t.TagName).Distinct().ToList();
+        ApplyFilters();  // Initial Filter when page loads
+    }
+
+    private void ApplyFilters()
+    {
+        var filteredTransactions = Transactions.Where(t =>
+            (string.IsNullOrEmpty(FilterType) || t.TransactionLabel == FilterType) &&
+            (string.IsNullOrEmpty(FilterTags) || t.TagName.Contains(FilterTags)) &&
+            (!StartDate.HasValue || t.Date >= StartDate) &&
+            (!EndDate.HasValue || t.Date <= EndDate)
+        ).ToList();
+
+        // Update the Filtered Transactions
+        FilteredTransactions = filteredTransactions;
+
+        // Update Total Transactions
+        TotalTransactions = filteredTransactions.Count;
+
+        // Update the summary statistics
+        TotalInflows = filteredTransactions.Where(t => t.TransactionLabel == "Credit").Sum(t => t.Amount);
+        TotalOutflows = filteredTransactions.Where(t => t.TransactionLabel == "Debit").Sum(t => t.Amount);
+        BalanceLeft = TotalInflows - TotalOutflows;
+
+        // Update Debts
+        RemainingDebts = filteredTransactions.Where(t => t.TransactionLabel == "Debt" && !t.IsCleared).Sum(t => t.Amount);
+        ClearedDebts = filteredTransactions.Where(t => t.TransactionLabel == "Debt" && t.IsCleared).Sum(t => t.Amount);
+
+        // Update Top 5 Highest and Lowest
+        Top5Highest = filteredTransactions.OrderByDescending(t => t.Amount).Take(5).ToList();
+        Top5Lowest = filteredTransactions.OrderBy(t => t.Amount).Take(5).ToList();
+    }
+}

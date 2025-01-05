@@ -1,4 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
+using Moneybank.Service;
+
+//using YourProjectNamespace.Services;  // Correct namespace import
+
 
 namespace Moneybank
 {
@@ -16,8 +20,22 @@ namespace Moneybank
 
             builder.Services.AddMauiBlazorWebView();
 
+
+            // Register the CashInService class as a singleton
+            //builder.Services.AddSingleton<CashInService>();
+            //builder.Services.AddSingleton<CashOutService>();
+            builder.Services.AddSingleton<JsonDataService<ModelList>>();
+
+
+
+
+
+
+
+
+
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
 #endif
 

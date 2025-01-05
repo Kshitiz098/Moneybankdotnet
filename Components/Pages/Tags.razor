@@ -1,0 +1,93 @@
+﻿@page "/addtag"
+@inject JsonDataService<ModelList> TagService
+
+<h3>Add New Tag</h3>
+
+<form @onsubmit="HandleAddTag">
+    <label>Tag Name:</label>
+    <input @bind="TagName" />
+    <button type="submit">Add Tag</button>
+</form>
+
+<p style="color:red">@ErrorMessage</p>
+
+<h4>Saved Tags</h4>
+<ul>
+    @foreach (var tag in tags)
+    {
+        <li>@tag.TagName</li>
+    }
+</ul>
+
+@code {
+    private string TagName;
+    private string ErrorMessage;
+    private List<Tag> tags = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // Load the data from the service
+            var dataStore = await TagService.LoadDataAsync();
+            if (dataStore?.Tagss == null)
+            {
+                tags = new List<Tag>(); // Initialize an empty list if no tags exist
+            }
+            else
+            {
+                tags = dataStore.Tagss; // Load tags from the data store
+            }
+        }
+        catch (Exception ex)
+        {
+            // Provide a clear error message if loading fails
+            ErrorMessage = $"Failed to load tags: {ex.Message}";
+            Console.WriteLine($"Error loading tags: {ex.Message}");
+        }
+    }
+
+    private async Task HandleAddTag()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(TagName))
+            {
+                ErrorMessage = "Tag name cannot be empty.";
+                return;
+            }
+
+            if (tags.Any(t => t.TagName.Equals(TagName, StringComparison.OrdinalIgnoreCase)))
+            {
+                ErrorMessage = "Tag already exists.";
+                return;
+            }
+
+            var newTag = new Tag
+                {
+                    TagId = tags.Count + 1,
+                    TagName = TagName
+                };
+
+            tags.Add(newTag);
+
+            // Update the tags in the DataStore and save it back
+            var dataStore = await TagService.LoadDataAsync();
+            if (dataStore != null)
+            {
+                dataStore.Tagss = tags;  // Update the tags list in the dataStore
+                await TagService.SaveDataAsync(dataStore);  // Save the updated dataStore back to the file
+            }
+
+            // Clear input and error messages
+            TagName = string.Empty;
+            ErrorMessage = string.Empty;
+        }
+        catch (Exception ex)
+        {
+            // Provide a clear error message if adding the tag fails
+            ErrorMessage = $"Failed to add tag: {ex.Message}";
+            Console.WriteLine($"Error adding tag: {ex.Message}");
+        }
+    }
+}

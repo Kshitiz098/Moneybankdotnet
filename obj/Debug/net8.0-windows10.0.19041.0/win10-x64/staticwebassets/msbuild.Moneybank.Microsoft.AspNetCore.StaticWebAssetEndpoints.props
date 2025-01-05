@@ -64,13 +64,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Moneybank.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f8gdsxgmvg"},{"Name":"integrity","Value":"sha256-b9OvQfWQDb5hi5YkrlMFwnzFantuxO7jTospmNvQg98="},{"Name":"label","Value":"Moneybank.styles.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5481"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022b9OvQfWQDb5hi5YkrlMFwnzFantuxO7jTospmNvQg98=\u0022"},{"Name":"Last-Modified","Value":"Tue, 17 Dec 2024 04:10:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5481"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022b9OvQfWQDb5hi5YkrlMFwnzFantuxO7jTospmNvQg98=\u0022"},{"Name":"Last-Modified","Value":"Sun, 05 Jan 2025 04:40:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="Moneybank.styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Moneybank.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-b9OvQfWQDb5hi5YkrlMFwnzFantuxO7jTospmNvQg98="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5481"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022b9OvQfWQDb5hi5YkrlMFwnzFantuxO7jTospmNvQg98=\u0022"},{"Name":"Last-Modified","Value":"Tue, 17 Dec 2024 04:10:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5481"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022b9OvQfWQDb5hi5YkrlMFwnzFantuxO7jTospmNvQg98=\u0022"},{"Name":"Last-Modified","Value":"Sun, 05 Jan 2025 04:40:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>
