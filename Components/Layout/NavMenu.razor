@@ -1,0 +1,82 @@
+﻿@inject NavigationManager Navigation
+@inject MoneyBanks.Service.AuthenticationService AuthenticationService
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Money Bank</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+       @*  <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="weather">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+            </NavLink>
+        </div> *@
+        @if (AuthenticationService.IsAuthenticated())
+        {
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="dashboard" Match="NavLinkMatch.All">
+                    <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Dashboard
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="cashout">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Cash out
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="cashin">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Cash in
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="debtloan">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Debt
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="addtag">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Tag
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <button class="nav-link btn btn-link" @onclick="Logout">
+                    <span class="bi bi-box-arrow-right" aria-hidden="true"></span> Logout
+                </button>
+            </div>
+        }
+        else
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="login">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> login
+                </NavLink>
+            </div>
+        }
+    </nav>
+</div>
+@code {
+    private void Logout()
+    {
+        // Call the logout method to update authentication status
+        AuthenticationService.Logout();
+
+        // Navigate back to the login page
+        Navigation.NavigateTo("/login");
+    }
+}

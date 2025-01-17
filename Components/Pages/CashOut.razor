@@ -1,0 +1,72 @@
+﻿@page "/cashout"
+
+@inject JsonDataService<ModelList> CashOutDataService
+@inject MoneyBanks.Service.AuthenticationService AuthenticationService
+
+<h3 class="text-center text-danger mb-4">Cash Out</h3>
+<div class="container">
+    <!-- Display Total Balance -->
+    <div class="row justify-content-center mb-3">
+        <div class="col-lg-8 col-md-10 text-center">
+            <h4 class="text-success">Total Balance: @CashOutBalance</h4>
+        </div>
+    </div>
+    <!-- Display Debugging Values -->
+    <div class="row justify-content-center mb-3">
+        <div class="col-lg-8 col-md-10 text-center">
+            <div class="alert alert-info">
+                <p><strong>Total Inflows:</strong> @CashOutInflows</p>
+                <p><strong>Total Outflows:</strong> @CashOutOutflows</p>
+                <p><strong>Pending Debts:</strong> @CashOutPendingDebts</p>
+            </div>
+        </div>
+    </div>
+    <!-- Cash Out Form -->
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <form @onsubmit="ProcessCashOut" class="shadow-lg p-4 rounded bg-white">
+                <div class="form-group mb-3">
+                    <label for="cashOutAmount" class="form-label">Amount:</label>
+                    <input id="cashOutAmount"
+                           @bind="CashOutAmount"
+                           type="number"
+                           class="form-control"
+                           placeholder="Enter amount"
+                           min="1"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="cashOutTitle" class="form-label">Title:</label>
+                    <input id="cashOutTitle"
+                           @bind="CashOutTitle"
+                           type="text"
+                           class="form-control"
+                           placeholder="Enter title"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="cashOutTags" class="form-label">Tags:</label>
+                    <select id="cashOutTags" @bind="SelectedCashOutTagId" class="form-control">
+                        <option value="">Select a tag</option>
+                        @foreach (var tag in CashOutTags)
+                        {
+                            <option value="@tag.TagId">@tag.TagName</option>
+                        }
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-danger w-100">Cash Out</button>
+            </form>
+
+            @if (!string.IsNullOrEmpty(CashOutErrorMessage))
+            {
+                <div class="alert alert-danger mt-3 text-center">@CashOutErrorMessage</div>
+            }
+        </div>
+    </div>
+</div>
+
+
+

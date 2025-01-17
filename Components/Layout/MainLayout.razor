@@ -1,0 +1,65 @@
+﻿@inherits LayoutComponentBase
+
+@inject NavigationManager Navigation
+@inject MoneyBanks.Service.AuthenticationService AuthenticationService
+
+@inject NavigationManager NavigationManager
+
+<Authorized>
+
+    <div class="page">
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+
+        <main>
+            <div class="top-row px-4">
+                <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+            </div>
+
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    </div>
+   @*  @Body *@
+</Authorized>
+<NotAuthorized>
+  @*   @Body *@
+</NotAuthorized>
+
+@code {
+    protected async override void OnInitialized()
+    {
+        // Check if user is authenticated
+        if (!AuthenticationService.IsAuthenticated())
+        {
+            
+            // Navigate to Login page if not authenticated
+            NavigationManager.NavigateTo("/login");
+        }
+        else
+        {
+            await SecureStorage.SetAsync("isAuthenticated", "true");
+            // Navigate to the home page if authenticated
+            NavigationManager.NavigateTo("/dashboard");
+        }
+    }
+}
+
+@* <div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+ *@

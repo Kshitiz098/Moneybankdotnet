@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\bundle\\MoneyBanks.styles.css",
+      "PackagePath": "staticwebassets\\MoneyBanks.styles.css"
+    },
+    {
+      "Id": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.MoneyBanks.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.build.MoneyBanks.props",
+      "PackagePath": "build\\MoneyBanks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.buildMultiTargeting.MoneyBanks.props",
+      "PackagePath": "buildMultiTargeting\\MoneyBanks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.buildTransitive.MoneyBanks.props",
+      "PackagePath": "buildTransitive\\MoneyBanks.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

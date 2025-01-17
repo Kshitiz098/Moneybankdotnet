@@ -1,0 +1,63 @@
+﻿@page "/cashin"
+
+
+@inject JsonDataService<ModelList> DataStoreService
+@inject MoneyBanks.Service.AuthenticationService AuthenticationService
+
+
+<h2 class="mb-4">Cash In</h2>
+
+<div class="container">
+    <form class="row g-3 shadow p-4 rounded bg-light" @onsubmit="HandleCashIn">
+        <!-- Amount -->
+        <div class="col-md-6">
+            <label for="cashInAmount" class="form-label">Amount</label>
+            <input type="number" id="cashInAmount" class="form-control" placeholder="Enter amount" @bind="CashInAmount" required min="1" />
+        </div>
+
+        <!-- Description -->
+        <div class="col-md-6">
+            <label for="cashInDescription" class="form-label">Description</label>
+            <input type="text" id="cashInDescription" class="form-control" placeholder="Enter description" @bind="CashInDescription" required />
+        </div>
+
+        <!-- Tags -->
+        <div class="col-md-12">
+            <label for="cashInTags" class="form-label">Tags</label>
+            <select id="cashInTags" @bind="SelectedTagId" class="form-control">
+                <option value="">Select a tag</option>
+                @foreach (var tag in AvailableTags)
+                {
+                    <option value="@tag.TagId">@tag.TagName</option>
+                }
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100">Add Cash In</button>
+        </div>
+    </form>
+
+    @if (!string.IsNullOrEmpty(ErrorNotification))
+    {
+        <div class="alert alert-danger mt-3">@ErrorNotification</div>
+    }
+
+    <!-- Previous Cash-Ins -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h5 class="text-success text-center">Previous Cash-Ins</h5>
+            <ul class="list-group mt-3">
+                @foreach (var credit in PreviousCredits)
+                {
+                    <li class="list-group-item">
+                        <strong>@credit. CashInAmount:</strong> @credit. CashInDescription
+                        <span class="badge bg-info text-dark">@credit.TagName</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+

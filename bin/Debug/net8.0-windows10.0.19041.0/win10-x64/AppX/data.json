@@ -1,0 +1,504 @@
+{
+  "Transactions": [
+    {
+      "TransactionId": 1,
+      "Note": null,
+      "Date": "2025-01-17T08:34:54.4107292+05:45",
+      "TranactionTitle": "yes",
+      "Amount": 10,
+      "TransactionLabel": "Credit",
+      "TagName": "rents",
+      "IsEditingNote": false,
+      "UserName": "a"
+    },
+    {
+      "TransactionId": 2,
+      "Note": null,
+      "Date": "2025-01-17T08:35:27.1799785+05:45",
+      "TranactionTitle": "no",
+      "Amount": 20,
+      "TransactionLabel": "Credit",
+      "TagName": "grocery",
+      "IsEditingNote": false,
+      "UserName": "a"
+    },
+    {
+      "TransactionId": 3,
+      "Note": null,
+      "Date": "2025-01-17T08:36:08.9570722+05:45",
+      "TranactionTitle": "yes",
+      "Amount": 10,
+      "TransactionLabel": "debt",
+      "TagName": null,
+      "IsEditingNote": false,
+      "UserName": "a"
+    },
+    {
+      "TransactionId": 4,
+      "Note": null,
+      "Date": "2025-01-17T08:37:24.4844357+05:45",
+      "TranactionTitle": "no",
+      "Amount": 5,
+      "TransactionLabel": "Debit",
+      "TagName": "rents",
+      "IsEditingNote": false,
+      "UserName": "a"
+    },
+    {
+      "TransactionId": 1,
+      "Note": null,
+      "Date": "2025-01-17T08:34:54.4107292+05:45",
+      "TranactionTitle": "yes",
+      "Amount": 10,
+      "TransactionLabel": "Credit",
+      "TagName": "rents",
+      "IsEditingNote": false,
+      "UserName": "a"
+    },
+    {
+      "TransactionId": 2,
+      "Note": null,
+      "Date": "2025-01-17T08:35:27.1799785+05:45",
+      "TranactionTitle": "no",
+      "Amount": 20,
+      "TransactionLabel": "Credit",
+      "TagName": "grocery",
+      "IsEditingNote": false,
+      "UserName": "a"
+    },
+    {
+      "TransactionId": 3,
+      "Note": null,
+      "Date": "2025-01-17T08:36:08.9570722+05:45",
+      "TranactionTitle": "yes",
+      "Amount": 10,
+      "TransactionLabel": "debt",
+      "TagName": null,
+      "IsEditingNote": false,
+      "UserName": "a"
+    },
+    {
+      "TransactionId": 4,
+      "Note": null,
+      "Date": "2025-01-17T08:37:24.4844357+05:45",
+      "TranactionTitle": "no",
+      "Amount": 5,
+      "TransactionLabel": "Debit",
+      "TagName": "rents",
+      "IsEditingNote": false,
+      "UserName": "a"
+    },
+    {
+      "TransactionId": 3,
+      "Note": null,
+      "Date": "2025-01-14T15:37:49.8397256+05:45",
+      "TranactionTitle": null,
+      "Amount": 20,
+      "TransactionLabel": "Credit",
+      "TagName": "groceries",
+      "IsEditingNote": false,
+      "UserName": null
+    },
+    {
+      "TransactionId": 6,
+      "Note": null,
+      "Date": "2025-01-14T23:55:11.6441428+05:45",
+      "TranactionTitle": null,
+      "Amount": 20,
+      "TransactionLabel": "Credit",
+      "TagName": "rent",
+      "IsEditingNote": false,
+      "UserName": null
+    },
+    {
+      "TransactionId": 12,
+      "Note": null,
+      "Date": "2025-01-15T22:19:45.8535792+05:45",
+      "TranactionTitle": "sdf",
+      "Amount": 1,
+      "TransactionLabel": "Credit",
+      "TagName": "rent",
+      "IsEditingNote": false,
+      "UserName": null
+    },
+    {
+      "TransactionId": 14,
+      "Note": null,
+      "Date": "2025-01-15T22:54:08.8481062+05:45",
+      "TranactionTitle": "yes",
+      "Amount": 10,
+      "TransactionLabel": "Credit",
+      "TagName": "groceries",
+      "IsEditingNote": false,
+      "UserName": null
+    },
+    {
+      "TransactionId": 13,
+      "Note": null,
+      "Date": "2025-01-17T11:32:54.8111161+05:45",
+      "TranactionTitle": "investment",
+      "Amount": 10,
+      "TransactionLabel": "Credit",
+      "TagName": "grocery",
+      "IsEditingNote": false,
+      "UserName": "kshitiz"
+    },
+    {
+      "TransactionId": 14,
+      "Note": null,
+      "Date": "2025-01-17T11:34:46.6209705+05:45",
+      "TranactionTitle": "investment",
+      "Amount": 10,
+      "TransactionLabel": "Credit",
+      "TagName": "grocery",
+      "IsEditingNote": false,
+      "UserName": "kshitiz"
+    },
+    {
+      "TransactionId": 15,
+      "Note": null,
+      "Date": "2025-01-17T11:42:03.5973758+05:45",
+      "TranactionTitle": "Saving",
+      "Amount": 10,
+      "TransactionLabel": "debt",
+      "TagName": null,
+      "IsEditingNote": false,
+      "UserName": "kshitiz"
+    },
+    {
+      "TransactionId": 16,
+      "Note": null,
+      "Date": "2025-01-17T11:43:13.0740115+05:45",
+      "TranactionTitle": "Investment",
+      "Amount": 15,
+      "TransactionLabel": "Debit",
+      "TagName": "grocery",
+      "IsEditingNote": false,
+      "UserName": "kshitiz"
+    },
+    {
+      "TransactionId": 17,
+      "Note": null,
+      "Date": "2025-01-17T11:45:39.6735145+05:45",
+      "TranactionTitle": "Saving",
+      "Amount": 10,
+      "TransactionLabel": "Debit",
+      "TagName": "grocery",
+      "IsEditingNote": false,
+      "UserName": "kshitiz"
+    },
+    {
+      "TransactionId": 18,
+      "Note": null,
+      "Date": "2025-01-17T11:49:13.3972194+05:45",
+      "TranactionTitle": "Rental",
+      "Amount": 10,
+      "TransactionLabel": "Credit",
+      "TagName": "rents",
+      "IsEditingNote": false,
+      "UserName": "kshitiz"
+    },
+    {
+      "TransactionId": 19,
+      "Note": null,
+      "Date": "2025-01-17T11:58:40.3555776+05:45",
+      "TranactionTitle": "investment",
+      "Amount": 10,
+      "TransactionLabel": "Credit",
+      "TagName": "grocery",
+      "IsEditingNote": false,
+      "UserName": "Amy"
+    },
+    {
+      "TransactionId": 20,
+      "Note": null,
+      "Date": "2025-01-17T12:01:36.6753391+05:45",
+      "TranactionTitle": "Saving",
+      "Amount": 20,
+      "TransactionLabel": "debt",
+      "TagName": null,
+      "IsEditingNote": false,
+      "UserName": "Amy"
+    },
+    {
+      "TransactionId": 21,
+      "Note": null,
+      "Date": "2025-01-17T12:03:24.2023593+05:45",
+      "TranactionTitle": "investment",
+      "Amount": 20,
+      "TransactionLabel": "Credit",
+      "TagName": "rents",
+      "IsEditingNote": false,
+      "UserName": "Amy"
+    },
+    {
+      "TransactionId": 22,
+      "Note": null,
+      "Date": "2025-01-17T12:05:23.5457364+05:45",
+      "TranactionTitle": "Saving",
+      "Amount": 10,
+      "TransactionLabel": "debt",
+      "TagName": null,
+      "IsEditingNote": false,
+      "UserName": "Amy"
+    },
+    {
+      "TransactionId": 23,
+      "Note": null,
+      "Date": "2025-01-17T12:06:31.5336156+05:45",
+      "TranactionTitle": "yes",
+      "Amount": 10,
+      "TransactionLabel": "Credit",
+      "TagName": "rents",
+      "IsEditingNote": false,
+      "UserName": "Amy"
+    },
+    {
+      "TransactionId": 24,
+      "Note": null,
+      "Date": "2025-01-17T12:13:03.5125579+05:45",
+      "TranactionTitle": "Saving",
+      "Amount": 20,
+      "TransactionLabel": "debt",
+      "TagName": null,
+      "IsEditingNote": false,
+      "UserName": "Amy"
+    }
+  ],
+  "Tagss": [
+    {
+      "TagId": 1,
+      "TagName": "rents"
+    },
+    {
+      "TagId": 2,
+      "TagName": "grocery"
+    },
+    {
+      "TagId": 3,
+      "TagName": "transportation"
+    },
+    {
+      "TagId": 4,
+      "TagName": "Fooding"
+    }
+  ],
+  "Users": [
+    {
+      "UserId": "cba6c005-3267-4a94-84e1-0a2dd391a5cc",
+      "UserName": "a",
+      "UserPassword": "hpnV6sPa0zSOpnACpiWSe4NOX9FZ4MpUGVg36zulh5Q=",
+      "CurrencyType": null,
+      "UserEmail": "a@gmail.com",
+      "PasswordSalt": "899y3S2Eh9ZRwmF\u002BrKvxJw==",
+      "PreferredCurrency": "INR"
+    },
+    {
+      "UserId": "5680056b-0d6a-4bac-85c5-df46e702dd06",
+      "UserName": "b",
+      "UserPassword": "k89XxA3BwVHVGxqhGdDq2PfEQMBHFJBhG0PmsbR7fqQ=",
+      "CurrencyType": null,
+      "UserEmail": "b@gmail.com",
+      "PasswordSalt": "e7xzUqZagvMPqCqWqqDFbQ==",
+      "PreferredCurrency": "USD"
+    },
+    {
+      "UserId": "14dbddda-7fdf-4ae6-850a-7539245ecc7b",
+      "UserName": "c",
+      "UserPassword": "LWVy5iBDoNNxPMm2UAyjXAPbyGhv26Z3ej8/TR0Fr7c=",
+      "CurrencyType": null,
+      "UserEmail": "c@gmail.com",
+      "PasswordSalt": "2tCuYo0q1v9KC/uBtgDfmQ==",
+      "PreferredCurrency": "USD"
+    },
+    {
+      "UserId": "b0f648b4-70c9-40df-bfe6-437b48645993",
+      "UserName": "kshitiz",
+      "UserPassword": "E7nT4N/WOBm4qrPPSflM5j2MsrUy4Dp2njkhMGuQMO4=",
+      "CurrencyType": null,
+      "UserEmail": "k@gmail.com",
+      "PasswordSalt": "jlo0uX/AvP9m73z1\u002BXXOTw==",
+      "PreferredCurrency": "EUR"
+    },
+    {
+      "UserId": "d2325108-2d4f-4261-904b-8d825a240931",
+      "UserName": "Amy",
+      "UserPassword": "vOd9UVHfbMXpxXETGklegbxQuw3Cb/zlZdy6hdxp0g8=",
+      "CurrencyType": null,
+      "UserEmail": "a@gmail.com",
+      "PasswordSalt": "JI3ADRhtb4OASI0EW2khXw==",
+      "PreferredCurrency": "EUR"
+    }
+  ],
+  "credits": [
+    {
+      "CashInId": 1,
+      "CashInAmount": 10,
+      "CashInDate": "2025-01-17T08:34:54.4105344+05:45",
+      "CashInDescription": "yes",
+      "TagName": "rents",
+      "Title": null,
+      "UserName": "a"
+    },
+    {
+      "CashInId": 2,
+      "CashInAmount": 20,
+      "CashInDate": "2025-01-17T08:35:27.1799747+05:45",
+      "CashInDescription": "no",
+      "TagName": "grocery",
+      "Title": null,
+      "UserName": "a"
+    },
+    {
+      "CashInId": 3,
+      "CashInAmount": 10,
+      "CashInDate": "2025-01-17T11:32:54.8111083+05:45",
+      "CashInDescription": "investment",
+      "TagName": "grocery",
+      "Title": null,
+      "UserName": "kshitiz"
+    },
+    {
+      "CashInId": 4,
+      "CashInAmount": 10,
+      "CashInDate": "2025-01-17T11:34:46.6209362+05:45",
+      "CashInDescription": "investment",
+      "TagName": "grocery",
+      "Title": null,
+      "UserName": "kshitiz"
+    },
+    {
+      "CashInId": 5,
+      "CashInAmount": 10,
+      "CashInDate": "2025-01-17T11:49:13.3969021+05:45",
+      "CashInDescription": "Rental",
+      "TagName": "rents",
+      "Title": null,
+      "UserName": "kshitiz"
+    },
+    {
+      "CashInId": 6,
+      "CashInAmount": 10,
+      "CashInDate": "2025-01-17T11:58:40.3555661+05:45",
+      "CashInDescription": "investment",
+      "TagName": "grocery",
+      "Title": null,
+      "UserName": "Amy"
+    },
+    {
+      "CashInId": 7,
+      "CashInAmount": 20,
+      "CashInDate": "2025-01-17T12:03:24.2023515+05:45",
+      "CashInDescription": "investment",
+      "TagName": "rents",
+      "Title": null,
+      "UserName": "Amy"
+    },
+    {
+      "CashInId": 8,
+      "CashInAmount": 10,
+      "CashInDate": "2025-01-17T12:06:31.533609+05:45",
+      "CashInDescription": "yes",
+      "TagName": "rents",
+      "Title": null,
+      "UserName": "Amy"
+    }
+  ],
+  "debits": [
+    {
+      "CashOutId": 1,
+      "CashOutDate": "2025-01-17T08:37:24.4850671+05:45",
+      "CashOutAmount": 5,
+      "CashOutDescription": "no",
+      "TagName": null,
+      "Title": null,
+      "UserName": "a"
+    },
+    {
+      "CashOutId": 2,
+      "CashOutDate": "2025-01-17T11:43:13.0747519+05:45",
+      "CashOutAmount": 15,
+      "CashOutDescription": "Investment",
+      "TagName": null,
+      "Title": null,
+      "UserName": "kshitiz"
+    },
+    {
+      "CashOutId": 3,
+      "CashOutDate": "2025-01-17T11:45:39.6740479+05:45",
+      "CashOutAmount": 10,
+      "CashOutDescription": "Saving",
+      "TagName": null,
+      "Title": null,
+      "UserName": "kshitiz"
+    }
+  ],
+  "debts": [
+    {
+      "DebtId": 1,
+      "DebtsAmount": 10,
+      "DueDate": "2025-03-27T00:00:00",
+      "DebtDate": "2025-01-17T08:36:08.9569943+05:45",
+      "DeptSource": "as",
+      "DeptDescription": "yes",
+      "IsPending": false,
+      "AmountCleared": 10,
+      "TagName": "transportation",
+      "Title": null,
+      "UserName": "a"
+    },
+    {
+      "DebtId": 2,
+      "DebtsAmount": 10,
+      "DueDate": "2025-04-30T00:00:00",
+      "DebtDate": "2025-01-17T11:42:03.597369+05:45",
+      "DeptSource": "From user Bipal",
+      "DeptDescription": "Saving",
+      "IsPending": false,
+      "AmountCleared": 10,
+      "TagName": "transportation",
+      "Title": null,
+      "UserName": "kshitiz"
+    },
+    {
+      "DebtId": 3,
+      "DebtsAmount": 20,
+      "DueDate": "2025-02-16T12:00:52.0780963+05:45",
+      "DebtDate": "2025-01-17T12:01:36.6753295+05:45",
+      "DeptSource": "From user Kshitiz",
+      "DeptDescription": "Saving",
+      "IsPending": false,
+      "AmountCleared": 20,
+      "TagName": "grocery",
+      "Title": null,
+      "UserName": "Amy"
+    },
+    {
+      "DebtId": 4,
+      "DebtsAmount": 10,
+      "DueDate": "2025-03-27T00:00:00",
+      "DebtDate": "2025-01-17T12:05:23.545721+05:45",
+      "DeptSource": "a",
+      "DeptDescription": "Saving",
+      "IsPending": false,
+      "AmountCleared": 10,
+      "TagName": "grocery",
+      "Title": null,
+      "UserName": "Amy"
+    },
+    {
+      "DebtId": 5,
+      "DebtsAmount": 20,
+      "DueDate": "2025-03-28T00:00:00",
+      "DebtDate": "2025-01-17T12:13:03.5124796+05:45",
+      "DeptSource": "Anul",
+      "DeptDescription": "Saving",
+      "IsPending": true,
+      "AmountCleared": 0,
+      "TagName": "Fooding",
+      "Title": null,
+      "UserName": "Amy"
+    }
+  ],
+  "currency": []
+}

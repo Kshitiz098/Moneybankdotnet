@@ -1,0 +1,52 @@
+﻿@page "/addtag"
+@inject JsonDataService<ModelList> TagDataService
+
+<h3>Add New Tag</h3>
+
+<form @onsubmit="AddNewTag">
+    <label>Enter Tag:</label>
+    <input @bind="NewTagName" />
+    <button type="submit">Add</button>
+</form>
+
+<p style="color:red">@ErrorText</p>
+
+<h4>Tag List</h4>
+<table>
+    <thead>
+        <tr>
+            <th>Tag Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tag in TagList)
+        {
+            <tr>
+                <td>
+                    @if (currentEditId == tag.TagId)
+                    {
+                        <input @bind="EditTagName" />
+                    }
+                    else
+                    {
+                        @tag.TagName
+                    }
+                </td>
+                <td>
+                    @if (currentEditId == tag.TagId)
+                    {
+                        <button @onclick="() => UpdateTag(tag.TagId)">Save</button>
+                        <button @onclick="CancelEdit">Cancel</button>
+                    }
+                    else
+                    {
+                        <button @onclick="() => StartEdit(tag.TagId, tag.TagName)">Edit</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

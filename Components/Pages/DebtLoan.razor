@@ -1,0 +1,107 @@
+﻿@page "/debtloan"
+
+@inject JsonDataService<ModelList> DataStoreService
+@inject MoneyBanks.Service.AuthenticationService AuthenticationService
+
+
+<h3 class="text-center text-primary mb-4">Manage Your Debts</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">Add New Debt</h5>
+                </div>
+                <div class="card-body">
+                    <form @onsubmit="HandleAddDebt">
+                        <div class="mb-3">
+                            <label for="amount" class="form-label">Debt Amount</label>
+                            <input id="amount"
+                                   @bind="DebtAmount"
+                                   type="number"
+                                   class="form-control"
+                                   placeholder="Enter amount"
+                                   required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="source" class="form-label">Source</label>
+                            <input id="source"
+                                   @bind="DebtSource"
+                                   type="text"
+                                   class="form-control"
+                                   placeholder="Enter source"
+                                   required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Title</label>
+                            <input id="description"
+                                   @bind="DebtDescription"
+                                   type="text"
+                                   class="form-control"
+                                   placeholder="Enter title"
+                                   required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="tags" class="form-label">Tag</label>
+                            <select id="tags" @bind="SelectedTagId" class="form-control">
+                                <option value="">Select a tag</option>
+                                @foreach (var tag in Tags)
+                                {
+                                    <option value="@tag.TagId">@tag.TagName</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dueDate" class="form-label">Due Date</label>
+                            <input id="dueDate"
+                                   @bind="SelectedDueDate"
+                                   type="date"
+                                   class="form-control"
+                                   required />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Add Debt</button>
+                    </form>
+                    @if (!string.IsNullOrEmpty(SuccessMessage))
+                    {
+                        <div class="alert alert-success mt-3">@SuccessMessage</div>
+                    }
+                    @if (!string.IsNullOrEmpty(ErrorMessage))
+                    {
+                        <div class="alert alert-danger mt-3">@ErrorMessage</div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">Uncleared Debts</h5>
+                </div>
+                <div class="card-body">
+                    @if (UnclearedDebts.Any())
+                    {
+                        <ul class="list-group">
+                            @foreach (var debt in UnclearedDebts)
+                            {
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="mb-0">@debt.DeptSource</h6>
+                                        <small class="text-muted">@debt.DueDate.ToShortDateString()</small>
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">@String.Format("{0:C}", debt.DebtsAmount - debt.AmountCleared)</span>
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="text-center text-muted">No uncleared debts found.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

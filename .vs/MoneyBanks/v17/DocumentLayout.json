@@ -1,0 +1,704 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\login.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\login.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\register.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\register.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\debtloan.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\debtloan.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\debtloan.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\debtloan.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\dashboard.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\dashboard.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\cashout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\cashout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\cashout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\cashout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\cashin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\cashin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\cashin.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\cashin.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\addtag.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\addtag.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\addtag.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\addtag.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\service\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:service\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\service\\modellist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:service\\modellist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\service\\jsondataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:service\\jsondataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\service\\currencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:service\\currencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\database\\debt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:database\\debt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\database\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:database\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\database\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:database\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\database\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:database\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\database\\outflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:database\\outflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\database\\inflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:database\\inflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|d:\\modules\\3rd year\\application development\\moneybanks\\database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E5F51D-B47B-4DA7-A139-6A6526836D9B}|MoneyBanks.csproj|solutionrelative:database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.razor.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Register.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\Register.razor.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Register.razor.cs",
+              "RelativeToolTip": "Components\\Pages\\Register.razor.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwDEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T06:41:14.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.razor.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Login.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\Login.razor.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Login.razor.cs",
+              "RelativeToolTip": "Components\\Pages\\Login.razor.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAUwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T06:40:58.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DebtLoan.razor.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\DebtLoan.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\DebtLoan.razor.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\DebtLoan.razor.cs",
+              "RelativeToolTip": "Components\\Pages\\DebtLoan.razor.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAkwHMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T06:39:31.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dashboard.razor.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Dashboard.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\Dashboard.razor.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Dashboard.razor.cs",
+              "RelativeToolTip": "Components\\Pages\\Dashboard.razor.cs",
+              "ViewState": "AgIAAFIBAAAAAAAAAAA3wHMBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T06:37:46.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CashOut.razor.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\CashOut.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\CashOut.razor.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\CashOut.razor.cs",
+              "RelativeToolTip": "Components\\Pages\\CashOut.razor.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAowJ0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T06:36:33.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Register.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Register.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Register.razor",
+              "RelativeToolTip": "Components\\Pages\\Register.razor",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T17:30:27.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Login.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Login.razor",
+              "RelativeToolTip": "Components\\Pages\\Login.razor",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T17:30:11.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CashIn.razor.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\CashIn.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\CashIn.razor.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\CashIn.razor.cs",
+              "RelativeToolTip": "Components\\Pages\\CashIn.razor.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAkwH4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T06:35:25.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddTag.razor.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\AddTag.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\AddTag.razor.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\AddTag.razor.cs",
+              "RelativeToolTip": "Components\\Pages\\AddTag.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T06:33:20.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "data.json",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\data.json",
+              "RelativeDocumentMoniker": "data.json",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\data.json",
+              "RelativeToolTip": "data.json",
+              "ViewState": "AgIAAHUCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-16T18:58:56.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DebtLoan.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\DebtLoan.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\DebtLoan.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\DebtLoan.razor",
+              "RelativeToolTip": "Components\\Pages\\DebtLoan.razor",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAGEAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T17:33:09.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CurrencyService.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Service\\CurrencyService.cs",
+              "RelativeDocumentMoniker": "Service\\CurrencyService.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Service\\CurrencyService.cs",
+              "RelativeToolTip": "Service\\CurrencyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:39:32.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dashboard.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Dashboard.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Dashboard.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Dashboard.razor",
+              "RelativeToolTip": "Components\\Pages\\Dashboard.razor",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAAABIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T20:13:55.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T17:41:39.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CashOut.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\CashOut.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\CashOut.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\CashOut.razor",
+              "RelativeToolTip": "Components\\Pages\\CashOut.razor",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T17:32:38.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-16T20:33:16.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddTag.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\AddTag.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\AddTag.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\AddTag.razor",
+              "RelativeToolTip": "Components\\Pages\\AddTag.razor",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T17:34:22.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CashIn.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\CashIn.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\CashIn.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\CashIn.razor",
+              "RelativeToolTip": "Components\\Pages\\CashIn.razor",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T17:32:23.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T02:20:53.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T02:21:02.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T17:25:27.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\_Imports.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\_Imports.razor",
+              "RelativeToolTip": "Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T18:03:05.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-16T21:08:19.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Service\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Service\\AuthenticationService.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Service\\AuthenticationService.cs",
+              "RelativeToolTip": "Service\\AuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:38:09.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-17T02:09:46.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T17:28:03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Debt.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\Debt.cs",
+              "RelativeDocumentMoniker": "Database\\Debt.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\Debt.cs",
+              "RelativeToolTip": "Database\\Debt.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:30:56.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Currency.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\Currency.cs",
+              "RelativeDocumentMoniker": "Database\\Currency.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\Currency.cs",
+              "RelativeToolTip": "Database\\Currency.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:31:43.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Components\\Routes.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Routes.razor",
+              "RelativeToolTip": "Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T18:04:10.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "JsonDataService.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Service\\JsonDataService.cs",
+              "RelativeDocumentMoniker": "Service\\JsonDataService.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Service\\JsonDataService.cs",
+              "RelativeToolTip": "Service\\JsonDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:41:59.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ModelList.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Service\\ModelList.cs",
+              "RelativeDocumentMoniker": "Service\\ModelList.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Service\\ModelList.cs",
+              "RelativeToolTip": "Service\\ModelList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:45:34.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PasswordHelper.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Service\\PasswordHelper.cs",
+              "RelativeDocumentMoniker": "Service\\PasswordHelper.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Service\\PasswordHelper.cs",
+              "RelativeToolTip": "Service\\PasswordHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:46:08.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T16:56:52.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Counter.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T20:38:41.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Weather.razor",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "Components\\Pages\\Weather.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T20:38:19.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\Transaction.cs",
+              "RelativeDocumentMoniker": "Database\\Transaction.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\Transaction.cs",
+              "RelativeToolTip": "Database\\Transaction.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA+wBUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:30:07.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\Tag.cs",
+              "RelativeDocumentMoniker": "Database\\Tag.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\Tag.cs",
+              "RelativeToolTip": "Database\\Tag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:26:46.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "OutFlow.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\OutFlow.cs",
+              "RelativeDocumentMoniker": "Database\\OutFlow.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\OutFlow.cs",
+              "RelativeToolTip": "Database\\OutFlow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:29:01.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Inflow.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\Inflow.cs",
+              "RelativeDocumentMoniker": "Database\\Inflow.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\Inflow.cs",
+              "RelativeToolTip": "Database\\Inflow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:12:06.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\User.cs",
+              "RelativeDocumentMoniker": "Database\\User.cs",
+              "ToolTip": "D:\\MODULES\\3rd year\\Application development\\MoneyBanks\\Database\\User.cs",
+              "RelativeToolTip": "Database\\User.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T18:32:33.528Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Transactions": [],
+  "Tagss": [
+    {
+      "TagId": 1,
+      "TagName": "rents"
+    },
+    {
+      "TagId": 2,
+      "TagName": "grocery"
+    },
+    {
+      "TagId": 3,
+      "TagName": "transportation"
+    }
+  ],
+  "Users": [],
+  "credits": [],
+  "debits": [],
+  "debts": [],
+  "currency": []
+}
